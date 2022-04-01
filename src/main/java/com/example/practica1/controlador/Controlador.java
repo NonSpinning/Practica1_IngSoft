@@ -18,8 +18,9 @@ public class Controlador{
     @PostMapping("/entrar")
     public String entrar(HttpServletRequest request, Model modelo){
         String nombre = request.getParameter("nombre");
-        //System.out.println("nombre ->" + nombre);
         modelo.addAttribute("nombre", nombre);
+        String nombre2 = request.getParameter("nombre2");
+        modelo.addAttribute("nombre2", nombre2);
         return "cuenta";
     }
 }
