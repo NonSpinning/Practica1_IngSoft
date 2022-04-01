@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        h1{
+            text-align: center;
+            font-family:'Courier New', monospace;
+        }
+        .button{
+            font-family:'Courier New', monospace;
+            background-color: lavender;
+            border: 1px solid slateblue;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 2px 2px lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bienvenido</h1>
+<div style="text-align: center;">
+    <form method="post" th:action="@{/procesa}">
+        <input type="hidden" name="nombre" value="Mora Abonce Samantha"/>
+        <button class="button" type="submit">Entrar</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        h1{
+            text-align: center;
+            font-family:'Courier New', monospace;
+        }        
+    </style>
+</head>
+<body>
+    <form method="post" th:action="@{/procesa}">
+        <h1 th:text="${nombre}"></h1>
+    </form>
+</body>
+</html>
