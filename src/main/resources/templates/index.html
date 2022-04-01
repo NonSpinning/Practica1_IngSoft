@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <style>
+        h1 {font-size: 45px; text-align: center; font-family: "Droid Sans Mono", monospace}
+        .entrar {background-color:#004d00;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 30px;
+            display: inline-block;
+            #font-family:"Droid Sans Mono", monospace}
+        .center{text-align:center}
+    </style>
+    <meta http-equiv="Content-Type", content="text/html; charset =UTF-8">
+    <title>Práctica 1</title>
+</head>
+<body>
+<h1>Bienvenido</h1>
+<div class="center">
+    <form action = "#" th:action="@{/nombre}" th:object="${nombre}" method="post">
+        <input type="hidden" id="texto" name="texto" value="Ibarra Alarcón Hugo Rafael"/>
+        <input type="submit" class ="entrar" value="Entrar"/>
+    </form>
+</div>
+</body>
+</html>
