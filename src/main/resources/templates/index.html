@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,14 +17,15 @@
             font-size: 50px;
         }
     </style>
+    <title>Práctica 1</title>
 </head>
-<title>Práctica 1</title>
 <body>
     <h1>¡Bienvenido!</h1>
         <div style="text-align: center;">
             <form method="post" th:action="@{/entrar}">
                 <input type="hidden" name="nombre" value="Adriana Michel Ávila García"/>
                 <input type="hidden" name="nombre2" value="Leslie Paola Gallegos Salgado"/>
+                <input type="hidden" name="nombre3" value="Ibarra Alarcón Hugo Rafael"/>
                  <button class="btn btn-outline-warning" type="submit">Entrar</button>
             </form>
         </div>

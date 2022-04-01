@@ -21,6 +21,8 @@ public class Controlador{
         modelo.addAttribute("nombre", nombre);
         String nombre2 = request.getParameter("nombre2");
         modelo.addAttribute("nombre2", nombre2);
+        String nombre3 = request.getParameter("nombre3");
+        modelo.addAttribute("nombre3", nombre3);
         return "cuenta";
     }
 }
